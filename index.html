@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <title>Address Book</title>
+</head>
+<body>
+    <header>
+        <h1>Address Book</h1>
+    </header>
+    <main>
+        <section id="contact-display">
+            <h2 class="contacts">Contacts</h2>
+            <table>
+            <tr id="head">
+                <thead>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>Website</th>
+                </thead>
+            </tr>
+            <tbody id="data"></tbody>
+            </table>
+        </section>
+        <section id="new-contact">
+            <h2>Create a New Contact</h2>
+            <form action="">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div>
+                    <label for="add">Address</label>
+                    <input type="text" id="add" required>
+                </div>
+                <div>
+                    <label for="tel">Phone</label>
+                    <input type="tel" id="tel" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div>
+                    <label for="url">Website</label>
+                    <input type="url" id="url" required>
+                </div>
+                <div>
+                    <button>Create Contact</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
